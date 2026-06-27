@@ -8,7 +8,6 @@ def driver():
     yield browser
     browser.quit()
 
-# Lista de comprobación de valores límites
 @pytest.mark.parametrize("edad, deba_permitir", [
     (17, False),  # Límite inferior (Inválido)
     (18, True),   # Límite inferior (Válido)
